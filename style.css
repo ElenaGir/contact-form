@@ -1,0 +1,365 @@
+/*-------------------------animation-------------------*/
+.context {
+    width: 138vh;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: left;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #2C242D;  
+    width: 100%;
+    height:100vh;
+    
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    background: rgba(202, 29, 205, 0.8);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    border-radius:80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 120px;
+    height: 120px;
+    border-radius:120px;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-name: le;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 80px;
+    height: 80px;
+    border-radius:80px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    border-radius:60px;
+    animation-delay: 0s;
+    animation-duration: 9s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 120px;
+    height: 120px;
+    border-radius:120px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    border-radius:110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    border-radius:150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 125px;
+    height: 125px;
+    border-radius:125px;
+    animation-delay: 15s;
+    animation-duration: 25s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 150px;
+    height: 150px;
+    border-radius:150px;
+    animation-delay: 2s;
+    animation-duration: 15s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    border-radius:150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+.circles li:nth-child(20){
+    left: 15%;
+    width: 80px;
+    height: 80px;
+    border-radius:80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(19){
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    animation-delay: 2s;
+    animation-duration: 6s;
+}
+
+.circles li:nth-child(18){
+    left: 40%;
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(17){
+    left: 55%;
+    width: 60px;
+    height: 60px;
+    border-radius:60px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+
+.circles li:nth-child(16){
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    animation-delay: 1s;
+}
+
+.circles li:nth-child(15){
+    left: 60%;
+    width: 110px;
+    height: 110px;
+    border-radius:110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(14){
+    left: 15%;
+    width: 150px;
+    height: 150px;
+    border-radius:150px;
+    animation-delay: 5s;
+}
+
+.circles li:nth-child(13){
+    left: 30%;
+    width: 25px;
+    height: 25px;
+    border-radius:25px;
+    animation-delay: 15s;
+    animation-duration: 15s;
+}
+
+.circles li:nth-child(12){
+    left: 75%;
+    width: 100px;
+    height: 100px;
+    border-radius:100px;
+    animation-delay: 2s;
+    animation-duration: 20s;
+}
+
+.circles li:nth-child(11){
+    left: 80%;
+    width: 150px;
+    height: 150px;
+    border-radius:150px;
+    animation-delay: 0s;
+    animation-duration: 6s;
+}
+.circles li:nth-child(21){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    border-radius:80px;
+    animation-delay: 10s;
+}
+
+
+.circles li:nth-child(22){
+    left: 40%;
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    animation-delay: 2s;
+    animation-duration: 16s;
+}
+
+.circles li:nth-child(23){
+    left: 30%;
+    width: 120px;
+    height: 120px;
+    border-radius:120px;
+    animation-delay: 14s;
+}
+
+.circles li:nth-child(24){
+    left: 45%;
+    width: 60px;
+    height: 60px;
+    border-radius:60px;
+    animation-delay: 0s;
+    animation-duration: 5s;
+}
+
+.circles li:nth-child(25){
+    left: 10%;
+    width: 120px;
+    height: 120px;
+    border-radius:120px;
+    animation-delay: 11s;
+}
+
+.circles li:nth-child(26){
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    border-radius:110px;
+    animation-delay: 13s;
+}
+
+.circles li:nth-child(27){
+    left: 15%;
+    width: 150px;
+    height: 150px;
+    border-radius:150px;
+    animation-delay: 15s;
+}
+
+.circles li:nth-child(28){
+    left: 20%;
+    width: 180px;
+    height: 180px;
+    border-radius:180px;
+    animation-delay: 5s;
+    animation-duration: 15s;
+}
+
+.circles li:nth-child(29){
+    left: 65%;
+    width: 35px;
+    height: 35px;
+    border-radius:35px;
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+
+.circles li:nth-child(30){
+    left: 80%;
+    width: 150px;
+    height: 150px;
+    border-radius:150px;
+    animation-delay: 0s;
+    animation-duration: 13s;
+}
+
+.circles li:nth-child(35){
+    left: 55%;
+    width: 110px;
+    height: 110px;
+    border-radius:110px;
+    animation-delay: 5s;
+}
+
+.circles li:nth-child(34){
+    left: 65%;
+    width: 150px;
+    height: 150px;
+    border-radius:150px;
+    animation-delay: 11s;
+}
+
+.circles li:nth-child(33){
+    left: 52%;
+    width: 180px;
+    height: 180px;
+    border-radius:180px;
+    animation-delay: 5s;
+    animation-duration: 7s;
+}
+
+.circles li:nth-child(32){
+    left: 55%;
+    width: 135px;
+    height: 135px;
+    border-radius:135px;
+    animation-delay: 2s;
+    animation-duration: 7s;
+}
+
+.circles li:nth-child(31){
+    left: 62%;
+    width: 150px;
+    height: 150px;
+    border-radius:150px;
+    animation-delay: 0s;
+    animation-duration: 13s;
+    
+}
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 1;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 80;
+        border-radius: 100%;
+    }
+
+}
+
+
+
+  /*-------------------------animation-------------------*/
