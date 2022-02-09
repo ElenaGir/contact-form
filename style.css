@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@400;700&family=Roboto&family=Space+Mono:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand&family=Roboto&family=Space+Mono:wght@700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
 body{
-    height: 88vh;
+    height: 95vh;
     width: 153vh;
     background-color:#000000;
     display: flex;
     justify-content: center;
-   
-    
+    align-items: center;   
 }
+
+
 main{
-    height: 80vh;
+  
+    height: 95vh;
     width: 153vh;
     display: grid;
-    grid-template-columns: 9.5% 50.5% 38% 5%;
-    grid-template-rows: 6% 34% 10% 10% 10% 30%
+    grid-template-columns: 10% 68% 17% 5%;
+    grid-template-rows: 8% 6% 22% 12% 12% 10% 30%
 }
 
 
@@ -25,17 +32,33 @@ aside{
     background-color: #000000;
     z-index: 10;
     grid-column-start: 3;
-    grid-row: 2;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    
 
     
 }
 .text{
     color:#fff;
     font-family: 'Quicksand', sans-serif;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 
 }
+.name{
+    height: 15vh;
+
+    background-color: #000000;
+    text-align: justify;
+   
+}
+
 h1{
-    width: 50vh;
+    width: 40vh;
     height: 30vh;
     color: #fff;
     font-size: 50px; 
@@ -44,6 +67,7 @@ h1{
     margin-top: 40vh;
     margin-left: 20vh;
     font-family: 'Quicksand', sans-serif;
+    z-index: 10;
 
 }
 
