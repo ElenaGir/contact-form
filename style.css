@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@400;700&family=Roboto&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand&family=Roboto&family=Space+Mono:wght@700&display=swap');
 body{
     height: 88vh;
     width: 153vh;
@@ -13,19 +15,23 @@ main{
     display: grid;
     grid-template-columns: 9.5% 50.5% 38% 5%;
     grid-template-rows: 6% 34% 10% 10% 10% 30%
-   
-
 }
+
 
 
 aside{
     width: 64vh;
     height: 74vh;
     background-color: #000000;
-    position: absolute;
-    margin-left: 117vh;
-    margin-top: 10vh;
+    z-index: 10;
+    grid-column-start: 3;
+    grid-row: 2;
+
     
+}
+.text{
+    color:#fff;
+    font-family: 'Quicksand', sans-serif;
 
 }
 h1{
@@ -33,21 +39,22 @@ h1{
     height: 30vh;
     color: #fff;
     font-size: 50px; 
-    position:absolute;
     margin: 0;
     padding: 0;
     margin-top: 40vh;
     margin-left: 20vh;
-    
-  
+    font-family: 'Quicksand', sans-serif;
+
 }
+
 /*-------------------------animation-------------------*/
-.form{
+.area{
     background: #2C242D;  
     width: 175vh;
     height:85vh ;
     grid-column-start: 2;
     grid-row: 2;
+    display: flex;
 }
 .circles{
      margin: 0;
@@ -62,6 +69,7 @@ h1{
 
 .circles li{
     list-style: none;
+    width: 500vh;
     background: rgba(202, 29, 205, 0.8);
     animation: animate 25s linear infinite;
   
@@ -416,6 +424,15 @@ h1{
 
 }
 
-
-
   /*-------------------------animation-------------------*/
+  
+  
+  /* ------------------responsive----------------- */
+  @media only screen and (max-width: 830px) {
+   
+    main{
+        height: 40vh;
+        width: 50vh;
+    }
+
+  }
