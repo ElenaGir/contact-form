@@ -23,8 +23,12 @@ main{
     grid-template-columns: 10% 68% 17% 5%;
     grid-template-rows: 8% 6% 22% 12% 12% 10% 30%
 }
+#logo{
+    grid-column-start: 2;
+    grid-row: 2;
+    padding:4vh;
 
-
+}
 
 aside{
     width: 64vh;
@@ -49,6 +53,7 @@ aside{
     display: flex;
     justify-content: center;
     align-items: center;   
+    font-size: 18px;
 
 }
 .name, .mail{
@@ -58,19 +63,29 @@ aside{
     color: #ffffff;
     height: 5vh;
     width: 50vh;
-    
-   
+    font-size: 14px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
 }
-::-webkit-input-placeholder /* WebKit, Blink, Edge */
+
+::-webkit-input-placeholder 
 { 
  color: #ffffff;
 }
+
 .message{
     background-color: #000000;
     font-family: 'Quicksand', sans-serif;
     color: #ffffff;
     height: 20vh;
     width: 50vh;
+    font-size: 14px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    
 
 }
 .submit{
