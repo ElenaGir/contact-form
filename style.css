@@ -36,25 +36,51 @@ aside{
     display: flex;
     flex-direction: column;
     row-gap: 5vh;
+    justify-content: center;
+    align-items: center;   
     
 
     
 }
 .text{
-    color:#fff;
+    color:#ffffff;
     font-family: 'Quicksand', sans-serif;
-    height: 20vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;   
 
 }
-.name{
-    height: 15vh;
-
-    background-color: #000000;
-    text-align: justify;
+.name, .mail{
    
+    background-color: #000000;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    height: 5vh;
+    width: 50vh;
+    
+   
+}
+::-webkit-input-placeholder /* WebKit, Blink, Edge */
+{ 
+ color: #ffffff;
+}
+.message{
+    background-color: #000000;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    height: 20vh;
+    width: 50vh;
+
+}
+.submit{
+    font-family: 'Quicksand', sans-serif;
+    height: 5vh;
+    width: 20vh;
+    color:#000000;
+    font-size: 24px;
+    font-weight:bolder;
+
 }
 
 h1{
