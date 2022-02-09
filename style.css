@@ -88,6 +88,16 @@ aside{
     
 
 }
+.message:focus{
+    outline: none; 
+}
+.mail:focus{
+    outline: none; 
+}
+.name:focus{
+    outline: none; 
+}
+   
 .submit{
     font-family: 'Quicksand', sans-serif;
     height: 5vh;
