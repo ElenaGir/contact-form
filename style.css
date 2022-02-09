@@ -8,20 +8,14 @@
 body{
     height: 95vh;
     width: 153vh;
-    background-color:#000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 12% 66% 17% 5%;
+    grid-template-rows: 8% 6% 22% 12% 12% 10% 30%;
+   
 }
 
-main{
-  
-    height: 95vh;
-    width: 153vh;
-    display: grid;
-    grid-template-columns: 10% 68% 17% 5%;
-    grid-template-rows: 8% 6% 22% 12% 12% 10% 30%
-}
+
 #logo{
     grid-column-start: 2;
     grid-row: 2;
@@ -32,7 +26,7 @@ main{
 aside{
     width: 64vh;
     height: 74vh;
-    background-color: #000000;
+    background-color:#000000;
     z-index: 10;
     grid-column-start: 3;
     grid-row: 3;
@@ -150,7 +144,7 @@ h1{
 
 .circles li{
     list-style: none;
-    width: 500vh;
+    width: 175vh;
     background: rgba(202, 29, 205, 0.8);
     animation: animate 25s linear infinite;
   
@@ -511,10 +505,32 @@ h1{
   /* ------------------responsive----------------- */
   @media only screen and (max-width: 830px) {
    body{
-       display: flex;
-       justify-content: center;
-       align-items: center;
+       width: 109vh;
+       height: 155vh;
+       
    }
-  
+   main{
+    margin:0;
+    padding: 0;
+    height: 155vh;
+ 
+    display: grid;
+    grid-template-columns: 5% 15% 20% 17% 5%;
+    grid-template-rows: 8% 6% 22% 12% 12% 10%;
+}
+.area{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width:87vh;
+    height: 140vh;
+    
+}
+.circles{
+    width: 87vh;
+    height:140vh;
+}
+aside{
+    grid-column-start: 2;
+}
 
   }
