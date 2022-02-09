@@ -14,7 +14,6 @@ body{
     align-items: center;   
 }
 
-
 main{
   
     height: 95vh;
@@ -86,7 +85,6 @@ aside{
     border-right: none;
     border-left: none;
     
-
 }
 .message:focus{
     outline: none; 
@@ -107,9 +105,17 @@ aside{
     font-weight:bolder;
 
 }
+.submit:hover {
+    border: 2px solid #CA1DCD;
+   }
+   
+   .submit:active {
+   background-color: #CA1DCD;
+   }
+    
 
 h1{
-    width: 40vh;
+    width: 45vh;
     height: 30vh;
     color: #fff;
     font-size: 50px; 
@@ -259,9 +265,9 @@ h1{
 .circles li:nth-child(19){
     grid-row-start: 3;
     grid-column-start: 1;
-    width: 20px;
-    height: 20px;
-    border-radius:20px;
+    width: 190px;
+    height: 190px;
+    border-radius:190px;
     animation-delay: 2s;
     animation-duration: 6s;
 }
@@ -269,18 +275,18 @@ h1{
 .circles li:nth-child(18){
     grid-row-start: 3;
     grid-column-start: 2;
-    width: 20px;
-    height: 20px;
-    border-radius:20px;
+    width: 70px;
+    height: 70px;
+    border-radius:70px;
     animation-delay: 4s;
 }
 
 .circles li:nth-child(17){
     grid-row-start: 3;
     grid-column-start: 3;
-    width: 60px;
-    height: 60px;
-    border-radius:60px;
+    width: 160px;
+    height: 160px;
+    border-radius:160px;
     animation-delay: 0s;
     animation-duration: 10s;
 }
@@ -288,9 +294,9 @@ h1{
 .circles li:nth-child(16){
     grid-row-start: 3;
     grid-column-start: 4;
-    width: 20px;
-    height: 20px;
-    border-radius:20px;
+    width: 180px;
+    height: 180px;
+    border-radius:180px;
     animation-delay: 1s;
 }
 
@@ -315,9 +321,9 @@ h1{
 .circles li:nth-child(13){
     grid-row-start: 3;
     grid-column-start: 7;
-    width: 25px;
-    height: 25px;
-    border-radius:25px;
+    width: 125px;
+    height: 125px;
+    border-radius:125px;
     animation-delay: 15s;
     animation-duration: 15s;
 }
@@ -354,9 +360,9 @@ h1{
 .circles li:nth-child(22){
     grid-row-start: 3;
     grid-column-start: 11;
-    width: 20px;
-    height: 20px;
-    border-radius:20px;
+    width: 120px;
+    height: 120px;
+    border-radius:120px;
     animation-delay: 2s;
     animation-duration: 16s;
 }
@@ -504,10 +510,11 @@ h1{
   
   /* ------------------responsive----------------- */
   @media only screen and (max-width: 830px) {
-   
-    main{
-        height: 40vh;
-        width: 50vh;
-    }
+   body{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+  
 
   }
