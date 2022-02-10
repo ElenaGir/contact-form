@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@400;700&family=Roboto&family=Space+Mono:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand&family=Roboto&family=Space+Mono:wght@700&display=swap');
 
-*{
-    margin:0;
-    padding: 0;
-}
+
+
 body{
     height: 95vh;
-    width: 153vh;
+    max-width: 100%;
     background-color: #000000;
     display: grid;
-    grid-template-columns: 12% 66% 17% 5%;
+    grid-template-columns: 7% 51% 37% 5%;
     grid-template-rows: 8% 6% 22% 12% 12% 10% 30%;
    
 }
@@ -503,34 +501,31 @@ h1{
   
   
   /* ------------------responsive----------------- */
-  @media only screen and (max-width: 830px) {
-   body{
-       width: 109vh;
-       height: 155vh;
-       
-   }
-   main{
-    margin:0;
-    padding: 0;
-    height: 155vh;
- 
-    display: grid;
-    grid-template-columns: 5% 15% 20% 17% 5%;
-    grid-template-rows: 8% 6% 22% 12% 12% 10%;
-}
-.area{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    width:87vh;
-    height: 140vh;
-    
-}
-.circles{
-    width: 87vh;
-    height:140vh;
-}
-aside{
-    grid-column-start: 2;
-}
+  @media only screen and (max-width: 830px){
+      body{
+          max-width: 100%;
+          max-height: 100%;
+          display: grid;
+        grid-template-columns: 3% 2% 90% 2% 3%;
+        grid-template-rows: 8% 6% 22% 12% 12% 10% 30%;
+        
+      }
+      .area{
+          width: 64vh;
+      }
+      aside{
+          width: 61.5vh;
+      }
 
-  }
+
+
+
+
+
+
+
+  } 
+
+  
+
+ 
