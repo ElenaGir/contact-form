@@ -5,7 +5,7 @@
 
 body{
     height: 95vh;
-    max-width: 100%;
+    width: 100vw;
     background-color: #000000;
     display: grid;
     grid-template-columns: 7% 51% 37% 5%;
@@ -22,7 +22,7 @@ body{
 }
 
 aside{
-    width: 64vh;
+    width: 75%;
     height: 74vh;
     background-color:#000000;
     z-index: 10;
@@ -44,10 +44,10 @@ aside{
     justify-content: center;
     align-items: center;   
     font-size: 18px;
-    
+   
 }
 form{
-    width: 50vh;
+    width: 50%;
     height: 50vh;
     display: flex;
     justify-content: space-between;
@@ -62,7 +62,9 @@ form{
     font-family: 'Quicksand', sans-serif;
     color: #ffffff;
     height: 5vh;
-    width: 50vh;
+    width: 150%;
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     border-top: none;
     border-right: none;
@@ -80,7 +82,7 @@ form{
     font-family: 'Quicksand', sans-serif;
     color: #ffffff;
     height: 20vh;
-    width: 50vh;
+    width: 150%;
     font-size: 14px;
     border-top: none;
     border-right: none;
@@ -132,8 +134,8 @@ h1{
 /*-------------------------animation-------------------*/
 .area{
     background: #2C242D;  
-    width: 175vh;
-    height:85vh ;
+    width: 175%;
+    height:1490% ;
     grid-column-start: 2;
     grid-row: 2;
     display: flex;
@@ -143,15 +145,13 @@ h1{
     padding: 0;
     display: grid;
     grid-template-rows: 50% 50%;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10%   10% 10% 10% ;
-    width: 175vh;
-    height:85vh ;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
     overflow: hidden;
 }
 
 .circles li{
     list-style: none;
-    width: 175vh;
+  
     background: rgba(202, 29, 205, 0.8);
     animation: animate 25s linear infinite;
     
@@ -552,6 +552,7 @@ h1{
     
     body{
         width: 80vh;
+        height: 40vh;
         margin: 0;
         padding: 0;
         display: grid;
