@@ -10,7 +10,7 @@ body{
     display: grid;
     grid-template-columns: 7% 51% 37% 5%;
     grid-template-rows: 8% 6% 22% 12% 12% 10% 30%;
-   
+    
 }
 
 
@@ -18,7 +18,7 @@ body{
     grid-column-start: 2;
     grid-row: 2;
     padding:4vh;
-
+    
 }
 
 aside{
@@ -33,10 +33,9 @@ aside{
     row-gap: 5vh;
     justify-content: center;
     align-items: center;   
-    
-
-    
+     
 }
+
 .text{
     color:#ffffff;
     font-family: 'Quicksand', sans-serif;
@@ -45,10 +44,9 @@ aside{
     justify-content: center;
     align-items: center;   
     font-size: 18px;
-
+    
 }
 .name, .mail{
-   
     background-color: #000000;
     font-family: 'Quicksand', sans-serif;
     color: #ffffff;
@@ -58,12 +56,12 @@ aside{
     border-top: none;
     border-right: none;
     border-left: none;
-
+    
 }
 
 ::-webkit-input-placeholder 
 { 
- color: #ffffff;
+    color: #ffffff;
 }
 
 .message{
@@ -87,7 +85,7 @@ aside{
 .name:focus{
     outline: none; 
 }
-   
+
 .submit{
     font-family: 'Quicksand', sans-serif;
     height: 5vh;
@@ -95,16 +93,16 @@ aside{
     color:#000000;
     font-size: 24px;
     font-weight:bolder;
-
+    
 }
 .submit:hover {
     border: 2px solid #CA1DCD;
-   }
-   
-   .submit:active {
-   background-color: #CA1DCD;
-   }
-    
+}
+
+.submit:active {
+    background-color: #CA1DCD;
+}
+
 
 h1{
     width: 45vh;
@@ -117,7 +115,7 @@ h1{
     margin-left: 20vh;
     font-family: 'Quicksand', sans-serif;
     z-index: 10;
-
+    
 }
 
 /*-------------------------animation-------------------*/
@@ -130,22 +128,22 @@ h1{
     display: flex;
 }
 .circles{
-     margin: 0;
-     padding: 0;
-     display: grid;
-     grid-template-rows: 50% 50%;
-     grid-template-columns: 10% 10% 10% 10% 10% 10% 10%   10% 10% 10% ;
-     width: 175vh;
-     height:85vh ;
-     overflow: hidden;
- }
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10%   10% 10% 10% ;
+    width: 175vh;
+    height:85vh ;
+    overflow: hidden;
+}
 
 .circles li{
     list-style: none;
     width: 175vh;
     background: rgba(202, 29, 205, 0.8);
     animation: animate 25s linear infinite;
-  
+    
 }
 
 .circles li:nth-child(1){
@@ -487,30 +485,30 @@ h1{
 
 
 @keyframes animate {
-
-
+    
+    
     100%{
         transform: translateY(-1000px);
         opacity: 80;
         border-radius: 100%;
     }
-
+    
 }
 
-  /*-------------------------animation-------------------*/
-  
-  
-  /* ------------------responsive----------------- */
-  @media only screen and (max-width: 830px){
-      body{
-          max-width: 100%;
-          max-height: 100%;
-          display: grid;
-          grid-template-columns: 3% 2% 90% 2% 3%;
-          grid-template-rows: 5% 15% 17% 12% 12% 10% 30%;
+/*-------------------------animation-------------------*/
+
+
+/* ------------------responsive----------------- */
+@media only screen and (max-width: 830px){
+    body{
+        max-width: 100%;
+        max-height: 100%;
+        display: grid;
+        grid-template-columns: 3% 2% 90% 2% 3%;
+        grid-template-rows: 5% 15% 17% 12% 12% 10% 30%;
         
-      }
-      .area{
+    }
+    .area{
         
         width: 64vh;
         height:90vh ;
@@ -520,51 +518,54 @@ h1{
         height: 90vh;
         grid-row-end: -1;
     }
-  
-      aside{
-          width: 61.5vh;
-          grid-column-end: 4;
-      }
-      h1{
-          grid-row-start: 2;
-          width: 35vh;
-          height: 30vh;
-          margin: 0;
-          padding: 0;
-          margin-left: 20vh;
-          margin-top: 2vh;
-      }
-#logo{
-    padding: 1.5vh;
-}
-  } 
-
-  @media only screen and (max-width: 420px){
-
- body{
-       margin: 0;
-       padding: 0;
-          display: grid;
-          grid-template-columns: 3% 2% 90% 2% 3%;
-          grid-template-rows: 9% 11% 17% 12% 12% 10% 30%;
-      }
     
-      aside{
-          width: 42vh;
-          opacity: 80%;
-      }
-      .area{
-          width: 80vh;
-          height: 100%;
-          grid-row-start: 1;
-          grid-row-end:8;
-      }
-      .submit{
-          opacity:none;
-      }
-      .name, .mail,.message{
-   font-size: 14px;
+    aside{
+        width: 61.5vh;
+        grid-column-end: 4;
+    }
+    h1{
+        grid-row-start: 2;
+        width: 35vh;
+        height: 30vh;
+        margin: 0;
+        padding: 0;
+        margin-left: 20vh;
+        margin-top: 2vh;
+    }
+    #logo{
+        padding: 1.5vh;
+    }
+} 
+
+@media only screen and (max-width: 420px){
+    
+    body{
+        width: 80vh;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 3% 2% 90% 2% 3%;
+        grid-template-rows: 9% 11% 17% 12% 12% 10% 30%;
+    }
+    
+    aside{
+        width: 42vh;
+        opacity: 80%;
+    }
+    .area{
+        grid-column-start: 1;
+         grid-row: 1;
+         height: 100vh;
        
+    }
+    .circles{
+        height: 100vh;
+    }
+    .submit{
+        opacity:none;
+    }
+    .name, .mail,.message{
+        font-size: 14px;
         width: 35vh;
     }
     .text{
@@ -580,14 +581,13 @@ h1{
         width: 20vh;
     }
     #logo{
-
+        
         width: 7vh;
         height: 7vh;
         margin-left: 1vh;
         padding: 0;
-
+        
     }
+    
+}
 
-  }
-
- 
