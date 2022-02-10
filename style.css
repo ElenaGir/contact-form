@@ -46,6 +46,17 @@ aside{
     font-size: 18px;
     
 }
+form{
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    
+
+  
+}
 .name, .mail{
     background-color: #000000;
     font-family: 'Quicksand', sans-serif;
