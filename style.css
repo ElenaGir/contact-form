@@ -546,7 +546,7 @@ h1{
        padding: 0;
           display: grid;
           grid-template-columns: 3% 2% 90% 2% 3%;
-          grid-template-rows: 5% 15% 17% 12% 12% 10% 30%;
+          grid-template-rows: 9% 11% 17% 12% 12% 10% 30%;
       }
     
       aside{
@@ -562,6 +562,31 @@ h1{
       .submit{
           opacity:none;
       }
+      .name, .mail,.message{
+   font-size: 14px;
+       
+        width: 35vh;
+    }
+    .text{
+        width:25vh;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 24px;
+        grid-column-start: 3;
+        margin: 0;
+        padding: 0;
+        margin-left: 8vh;
+        width: 20vh;
+    }
+    #logo{
+
+        width: 7vh;
+        height: 7vh;
+        margin-left: 1vh;
+        padding: 0;
+
+    }
 
   }
 
