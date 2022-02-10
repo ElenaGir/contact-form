@@ -561,7 +561,7 @@ h1{
     
     aside{
         width: 42vh;
-        opacity: 80%;
+        background-color: rgba(0, 0, 0, 0.8);
     }
     .area{
         grid-column-start: 1;
@@ -573,12 +573,14 @@ h1{
         height: 100vh;
     }
     .submit{
-        opacity:none;
+        z-index: 100;
     }
     .name, .mail,.message{
         font-size: 14px;
         width: 35vh;
+        background-color: rgba(0, 0, 0, 0.1);
     }
+
     .text{
         width:25vh;
         font-size: 14px;
