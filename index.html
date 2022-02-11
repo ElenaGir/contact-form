@@ -57,11 +57,18 @@
         <div class="text">
             Do you have any questions, suggestion or feedback?
             <br> Wed love to hear from you!</div>
-            <form action="traitement.php" methode="POST" id ="myForm">
-            <input class="name" placeholder="Your name"required>
-            <input class="mail" placeholder="Your mail"required>
+            <form action="traitement.php" method="POST" id ="myForm">
+
+            <input class="name" placeholder="Your name"required pattern="[a-z]{3,8}">
+            <span id ="error"></span>
+
+            <input class="mail" placeholder="Your mail"required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
+            <span id ="error1"></span>
+
             <input class="message" placeholder="Message"required>
-            <input class="submit"type="button"value="SUBMIT">
+            <span id ="error2"></span>
+
+            <input class="submit"type="submit"value="SUBMIT">
         </form>
         </div>
     </aside>  
