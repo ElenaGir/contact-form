@@ -8,25 +8,25 @@ body{
     width: 95vw;
     background-color: #000000;
     display: grid;
-    grid-template-columns: 7% 51% 37% 5%;
-    grid-template-rows: 8% 6% 22% 12% 12% 10% 30%;
+    grid-template-columns: 7% 50% 38% 5%;
+    grid-template-rows: 8% 7% 21% 12% 12% 10% 30%;
     
 }
 
 
 #logo{
-    grid-column-start: 2;
-    grid-row: 2;
+     margin-top: 8vh;
     padding:4vh;
     
 }
 
 aside{
-    width: 75%;
+   
     height: 74vh;
     background-color:#000000;
     z-index: 10;
     grid-column-start: 3;
+    grid-column-end: 4;
     grid-row: 3;
     display: flex;
     flex-direction: column;
@@ -71,6 +71,11 @@ form{
     border-left: none;
     
 }
+#error{
+ margin: 0;
+ padding: 0; 
+
+}
 
 ::-webkit-input-placeholder 
 { 
@@ -103,6 +108,7 @@ form{
     font-family: 'Quicksand', sans-serif;
     height: 5vh;
     width: 20vh;
+    border-radius: 1vh;
     color:#000000;
     font-size: 24px;
     font-weight:bolder;
@@ -124,20 +130,22 @@ h1{
     font-size: 50px; 
     margin: 0;
     padding: 0;
-    margin-top: 40vh;
-    margin-left: 20vh;
+    margin-top: 30vh;
+    margin-left: 25vh;
     font-family: 'Quicksand', sans-serif;
     z-index: 10;
+    line-height: 20vh;
     
 }
 
 /*-------------------------animation-------------------*/
 .area{
     background: #2C242D;  
-    width: 175%;
-    height:1490% ;
+   
     grid-column-start: 2;
-    grid-row: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: -1;
     display: flex;
 }
 .circles{
@@ -541,10 +549,12 @@ h1{
         margin: 0;
         padding: 0;
         margin-left: 20vh;
-        margin-top: 2vh;
+        margin-top: 1.1vh;
+        line-height: 7vh;
     }
     #logo{
-        padding: 1.5vh;
+       margin-top: 4vh;
+        margin-left: 2vh;
     }
 } 
 
@@ -563,6 +573,7 @@ h1{
     aside{
         width: 42vh;
         background-color: rgba(0, 0, 0, 0.8);
+        grid-row-start: 6;
     }
     .area{
         grid-column-start: 1;
@@ -587,21 +598,116 @@ h1{
         font-size: 14px;
     }
     h1{
-        font-size: 24px;
-        grid-column-start: 3;
-        margin: 0;
-        padding: 0;
+        grid-row-start: 2;
+        width: 25vh;
+        height: 30vh;
         margin-left: 8vh;
-        width: 20vh;
+        margin-top: 2vh;
+        line-height: 8vh;
+        font-size: 28px;
     }
-    #logo{
-        
+    #logo { 
         width: 7vh;
         height: 7vh;
         margin-left: 1vh;
-        padding: 0;
         
     }
     
 }
-
+/*-------------mis en forme pattern name--------------*/
+	
+    .name:invalid{
+        
+        border:2px solid red;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97);
+        transform: translate3d(0, 0, 0)
+            }
+            
+        @keyframes shake {
+          10%, 90% {
+            transform: translate3d(-1px, 0, 0);
+          }
+          
+          20%, 80% {
+            transform: translate3d(2px, 0, 0);
+          }
+        
+          30%, 50%, 70% {
+            transform: translate3d(-4px, 0, 0);
+          }
+        
+          40%, 60% {
+            transform: translate3d(4px, 0, 0);
+          }
+        }
+        
+      
+            
+    .name:invalid ~ span { 
+            
+        display:flex;
+        color:red; 
+        transition:.4s opacity linear
+            
+            }
+            
+        .name:invalid ~ span {
+            
+            visibility:visible;
+            opacity:1
+            
+            } 
+/*-------------mis en forme pattern mail--------------*/
+/* .mail{
+        
+    border:1px solid red;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97);
+    transform: translate3d(0, 0, 0)
+   
+        }
+        
+    @keyframes shake {
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    } 
+      
+    form #error{
+        
+    opacity:0; 
+    visibility:hidden;
+        
+        }
+        
+    .mail span { 
+        
+    display:flex;
+    color:red; 
+    transition:.4s opacity linear
+        
+        }
+        
+    .mail span {
+        
+        visibility:visible;
+        opacity:1
+        
+        }  */
